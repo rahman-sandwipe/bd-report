@@ -791,13 +791,20 @@ a {
     flex-wrap: wrap;
     gap: 5px;
     background-color: #fff;
-    padding: 5px;
     border: 1px solid #ddd;
+    padding: 5px;
 }
 .category-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+}
+.category-item {
+    width: calc(100% - 5px); /* 4-column layout */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ddd;
 }
 
 .category-item img {
