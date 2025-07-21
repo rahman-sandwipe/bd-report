@@ -18,11 +18,25 @@ a {
     user-select: none;          /* Standard */
     cursor: default;            /* ইচ্ছেমতো কাস্টম কার্সর */
 }
-
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-box {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 5px;
+}
+.sidebar {
+    width: 25%;
+    margin: 0 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 /* General CSS */
 
@@ -286,21 +300,10 @@ a {
     cursor: pointer;
 }
 #section-one {
-    background-color: #ccc;
-    padding: 20px 0;
+    background-color: #01987a4a;
+    padding: 50px 0;
 }
-#section-one .container {
-    display: flex;
-    justify-content: space-between;
-}
-.left-column {
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    overflow: hidden;
-}
-#section-one .special-report {
+#section-one .special-article {
     width: 65%;
     order: 2;
     display: flex;
@@ -308,15 +311,7 @@ a {
     background-color: #fff;
     padding: 5px;
 }
-#section-one .special-heading {
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 1.5;
-    color: #019879;
-    margin-bottom: 10px;
-    text-align: center;
-}
-#section-one .lead-report {
+#section-one .lead-articles {
     width: 35%;
     order: 1;
     display: flex;
@@ -324,15 +319,24 @@ a {
     background-color: #fff;
     padding: 5px;
 }
-
-
-.lead-heading {
-    font-size: 20px;
-    font-weight: 700;
+#section-one .special-heading {
+    font-size: 24px;
+    font-weight: 900;
     line-height: 1.5;
     color: #019879;
-    margin-bottom: 10px;
     text-align: center;
+     -webkit-line-clamp: 2; /* Show only 2 lines */
+    line-clamp: 2; /* Show only 2 lines */
+}
+.lead-heading {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #019879;
+    text-align: center;
+    padding-bottom: 5px;
+     -webkit-line-clamp: 2; /* Show only 2 lines */
+    line-clamp: 2; /* Show only 2 lines */
 }
 .heading-1{
     font-size: 16px;
@@ -340,26 +344,36 @@ a {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+    -webkit-line-clamp: 2; /* Show only 2 lines */
+    line-clamp: 2; /* Show only 2 lines */
+    text-overflow: ellipsis;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.heading-2{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     margin: 0;
     font-weight: 500;
     line-height: 1.5;
-    color: #019879;
+    color: #333;
+    -webkit-line-clamp: 2; /* Show only 2 lines */
+    line-clamp: 2; /* Show only 2 lines */
+    text-overflow: ellipsis;
+    text-decoration: none;
+    cursor: pointer;
 }
-.right-column {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #f2f3f2;
-    margin: 0 5px;
-    overflow: hidden;
-}
-
-
 .poll-box {
-    height: 340px;
+    height: 330px;
     width: 100%;
-    background-color: #f2f3f2;
+    background-color: #fff;
     overflow: hidden;
     padding: 5px;
 }
@@ -451,7 +465,6 @@ a {
     background-color: #01987a7e;
     border-radius: 6px;
     height: 10px;
-    margin-top: 6px;
     position: relative;
     overflow: hidden;
 }
@@ -487,13 +500,6 @@ a {
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.article-container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
 .article-left {
   flex: 3;
 }
@@ -519,24 +525,12 @@ a {
   margin: 0;
   color: #000;
 }
-.tab-content .article-item .big {
-  grid-column: span 2;
-  flex-direction: column;
-}
-.article-item.big img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-.article-item.big h3 {
-  font-size: 16px;
-}
 .article-right {
     flex: 1;
     background: #fff;
     border: 1px solid #ddd;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .tab-header {
   display: flex;
@@ -611,35 +605,25 @@ a {
 /* section-two */
 #section-two {
     background-color: #f2f3f2;
-    /* padding: 20px 0; */
+    padding: 50px 0;
 }
-#section-two .container {
-    display: flex;
-    justify-content: space-between;
-}
+
 #section-two .article-box {
-    width: 100%;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
     overflow: hidden;
-    gap: 5px;
-    background-color: #f2f3f2;
-    margin: 10px 0;
 }
-#section-two .lead-articles {
+.lead-articles {
     width: 65%;
     display: flex;
     flex-wrap: wrap;
+    background-color: #f2f3f2;
     gap: 5px;
-    background-color: #f2f3f2;
 }
-#section-two .list-articles {
+.list-articles {
     width: 35%;
-    display: flex;
-    flex-direction: column;
     background-color: #f2f3f2;
-    gap: 10px;
 }
 
 #section-two .article-item {
@@ -666,7 +650,6 @@ a {
     background-color: #019879;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .list-articles .list-item {
     height: 80px;
@@ -695,8 +678,7 @@ a {
     object-fit: cover;
     display: block;
 }
-
-.list-articles .list-item .lead-heading {
+.lead-heading {
     font-size: 16px;
     font-weight: 600;
     margin: 0;
@@ -728,15 +710,15 @@ a {
 /* ads */
 .ads-box {
     width: 100%;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
     overflow: hidden;
 }
 .ads {
     width: 100%;
-    height: 250px;
+    height: 160px;
     overflow: hidden;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #f2f3f2;
 }
 .ads img {
     width: 100%;
@@ -748,8 +730,6 @@ a {
     width: 100%;
     height: 90px;
     overflow: hidden;
-    padding: 5px;
-    border-radius: 5px;
 }
 .ads-2 img {
     width: 100%;
