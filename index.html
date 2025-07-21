@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BD Report | বাংলাদেশ সংবাদ</title>
+
+    <!-- Meta SEO -->
+    <meta name="description" content="বাংলাদেশের সর্বশেষ সংবাদ পড়ুন BD Report ওয়েবসাইটে।" />
+    <meta name="keywords" content="বাংলাদেশ, খবর, সংবাদ, ব্রেকিং নিউজ" />
+    <meta name="author" content="BD Report" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="BD Report | বাংলাদেশ সংবাদ" />
+    <meta property="og:description" content="সত্য ও নির্ভরযোগ্য সংবাদ আপনার হাতের মুঠোয়।" />
+    <meta property="og:image" content="https://example.com/thumb.jpg" />
+    <meta property="og:url" content="https://bdreport.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <section id="top-bar">
+            <div class="container">
+                <div class="date">সোমবার, ১৫ জুলাই ২০২৫, ০১ আশ্বিন ১৪৩২</div>
+                <div class="d-flex gap-2">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-header">
+            <div class="container">
+                <aside class="weather-box" aria-label="weather">
+                    <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather"
+                        class="weather-icon" />
+                    <div class="weather-content">
+                        <div class="location">Dhaka, Bangladesh</div>
+                        <div class="weather">
+                            <span class="current-temp">30°C</span>
+                            <span class="temp-condition">Sunny</span>
+                        </div>
+                        <div class="humidity">
+                            <span class="humidity-label">Humidity:</span>
+                            <span class="humidity-value">60%</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://www.bd-report.com/images/settings/app_logo_1818969904359967.png" alt="">
+                    </a>
+                </div>
+
+                <aside class="d-none d-md-block text-end" aria-label="ads">
+                    <div class="ads">
+                        ADS<br />250*110
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg navbar-custom" aria-label="main navigation">
+            <div class="container">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-wrap">
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">প্রচ্ছদ</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">সর্বশেষ</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">জাতীয়</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">রাজনীতি</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">সারাদেশ</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">বিশেষ প্রতিবেদন</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">অর্থনীতি</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">আন্তর্জাতিক</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">খেলাধুলা</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">বিনোদন</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">শিক্ষা</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">অনন্য</a></li>
+                    </ul>
+                    <div class="ms-auto d-flex align-items-center gap-2">
+                        <button class="search-btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="account-link">
+                        <a href="#" class="" data-bs-toggle="modal" data-bs-target="#accountModal">
+                            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user icon"
+                                class="user-icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="breaking-article">
+            <div class="container">
+                <div class="article-label">Breking article</div>
+                <div class="article-ticker">
+                    <ul class="article-items">
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">বাংলাদেশের প্রধানমন্ত্রী আজ জাতির উদ্দেশ্যে ভাষণ দেবেন।</span>
+                            </a>
+                        </li>
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">ঢাকায় আজ অনুষ্ঠিত হবে আন্তর্জাতিক সম্মেলন।</span>
+                            </a>
+                        </li>
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">বাংলাদেশের ক্রিকেট দল আজ নতুন কোচের সাথে অনুশীলন শুরু
+                                    করবে।</span>
+                            </a>
+                        </li>
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">দেশের বিভিন্ন স্থানে বৃষ্টির পূর্বাভাস রয়েছে।</span>
+                            </a>
+                        </li>
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</span>
+                            </a>
+                        </li>
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">ঢাকায় আজ অনুষ্ঠিত হবে আন্তর্জাতিক চলচ্চিত্র উৎসব।</span>
+                            </a>
+                        </li>
+                        <li class="article-item">
+                            <a href="#">
+                                <i class="fas fa-square"></i>
+                                <span class="article-text">বাংলাদেশের শিক্ষাব্যবস্থায় নতুন পরিবর্তন আসছে।</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="article-controls">
+                    <button class="prev-article">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="next-article">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section id="section-one">
+            <div class="container">
+                <div class="left-column">
+                    <div class="special-report">
+                        <article class="report-item">
+                            <a href="">
+                                <figure>
+                                    <img src="https://placehold.co/600x400" alt="Special Report" class="img-fluid" />
+                                </figure>
+                                <div class="special-content">
+                                    <h3 class="special-heading">বিশেষ প্রতিবেদন: বাংলাদেশের অর্থনীতি ও উন্নয়ন</h3>
+                                    <p class="special-description">বাংলাদেশের অর্থনীতি গত দশকে উল্লেখযোগ্য উন্নতি করেছে।
+                                        এই
+                                        প্রতিবেদনটি দেশের অর্থনৈতিক প্রবৃদ্ধি, বিনিয়োগ ও কর্মসংস্থান নিয়ে বিস্তারিত
+                                        আলোচনা
+                                        করবে। এবং বাংলাদেশের উন্নয়ন প্রতিবেদন প্রকাশ করবে</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="lead-report">
+                        <article class="report-item">
+                            <figure>
+                                <img src="https://placehold.co/600x400" alt="Lead Report" class="img-fluid" />
+                            </figure>
+                            <h3 class="lead-heading">দরপত্র ছাড়াই নির্মাণ করা হবে জুলাই গণ-অভ্যুত্থান</h3>
+                        </article>
+                        <article class="report-item">
+                            <figure>
+                                <img src="https://placehold.co/600x400" alt="Lead Report" class="img-fluid" />
+                            </figure>
+                            <h3 class="lead-heading">বাংলাদেশের শিক্ষা ব্যবস্থা: উন্নয়ন ও সমস্যা</h3>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="ads-box">
+                        <div class="ads">
+                            <img src="images/ads-02.png" alt="Advertisement" class="img-fluid" />
+                        </div>
+                    </div>
+
+                    <div class="poll-box">
+                        <div class="poll-header">
+                            <h4 class="poll-title">আজকের পোল</h4>
+                        </div>
+                        <form class="poll-form" action="#" method="POST">
+                            <label for="pollQuestion">আপনি আজ কোন বিষয়টি নিয়ে বেশি আগ্রহী? আপনি আজ কোন বিষয়টি নিয়ে বেশি
+                                আগ্রহী?</label>
+                            <div class="poll-option">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pollOption" id="option1"
+                                        value="option1">
+                                    <label class="form-check-label" for="option1">
+                                        <span>Option 01</span>
+                                        <span class="percentage">2%</span>
+                                        <div class="poll-bar">
+                                            <div class="bar-fill" style="width: 2%;"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pollOption" id="option2"
+                                        value="option2">
+                                    <label class="form-check-label" for="option2">
+                                        <span>Option 02</span>
+                                        <span class="percentage">30%</span>
+                                        <div class="poll-bar">
+                                            <div class="bar-fill" style="width: 30%;"></div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pollOption" id="option3"
+                                        value="option3">
+                                    <label class="form-check-label" for="option3">
+                                        <span>Option 03</span>
+                                        <span class="percentage">30%</span>
+                                        <div class="poll-bar">
+                                            <div class="bar-fill" style="width: 30%;"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pollOption" id="option4"
+                                        value="option4">
+                                    <label class="form-check-label" for="option4">
+                                        <span>Option 04</span>
+                                        <span class="percentage">30%</span>
+                                        <div class="poll-bar">
+                                            <div class="bar-fill" style="width: 30%;"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pollOption" id="option5"
+                                        value="option5">
+                                    <label class="form-check-label" for="option5">
+                                        <span>Option 05</span>
+                                        <span class="percentage">68%</span>
+                                        <div class="poll-bar">
+                                            <div class="bar-fill" style="width: 68%;"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pollOption" id="option6"
+                                        value="option6">
+                                    <label class="form-check-label" for="option6">
+                                        <span>Option 06</span>
+                                        <span class="percentage">68%</span>
+                                        <div class="poll-bar">
+                                            <div class="bar-fill" style="width: 68%;"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="primary-btn">ভোট দিন</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-two">
+            <div class="container">
+                <div class="left-column">
+                    <div class="article-box">
+                        <div class="lead-articles">
+                            <article class="article-item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="Lead Article" class="img-fluid" />
+                                    </figure>
+                                    <h3 class="heading-1">বাংলাদেশের প্রধানমন্ত্রী আজ জাতির উদ্দেশ্যে ভাষণ দেবেন।</h3>
+                                </a>
+                            </article>
+                            <article class="article-item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="Lead Article" class="img-fluid" />
+                                    </figure>
+                                    <h3 class="heading-1">ঢাকায় আজ অনুষ্ঠিত হবে আন্তর্জাতিক সম্মেলন।</h3>
+                                </a>
+                            </article>
+                            <article class="article-item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="Lead Article" class="img-fluid" />
+                                    </figure>
+                                    <h3 class="heading-1">বাংলাদেশের ক্রিকেট দল আজ নতুন কোচের সাথে অনুশীলন শুরু করবে।</h3>
+                                </a>
+                            </article>
+                            <article class="article-item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="Lead Article" class="img-fluid" />
+                                    </figure>
+                                    <h3 class="heading-1">দেশের বিভিন্ন স্থানে বৃষ্টির পূর্বাভাস রয়েছে।</h3>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="list-articles">
+                            <article class="list-item">
+                                <a href="">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="List Article" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="heading-1">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</h4>
+                                </a>
+                            </article>
+                            <article class="list-item">
+                                <a href="">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="List Article" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="heading-1">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</h4>
+                                </a>
+                            </article>
+                            <article class="list-item">
+                                <a href="">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="List Article" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="heading-1">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</h4>
+                                </a>
+                            </article>
+                            <article class="list-item">
+                                <a href="">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="List Article" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="heading-1">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</h4>
+                                </a>
+                            </article>
+                            <article class="list-item">
+                                <a href="">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="List Article" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="heading-1">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</h4>
+                                </a>
+                            </article>
+                            <article class="list-item">
+                                <a href="">
+                                    <figure>
+                                        <img src="https://placehold.co/600x400" alt="List Article" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="heading-1">বাংলাদেশের অর্থনীতি নিয়ে বিশেষ প্রতিবেদন প্রকাশিত হয়েছে।</h4>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="right-column">
+                    <div class="ads-box">
+                        <div class="ads-2">
+                            <img src="images/ads-02.png" alt="Advertisement" class="img-fluid" />
+                        </div>
+                    </div>
+
+                    <div class="article-right">
+                        <div class="tab-header">
+                            <span class="tab active" data-tab="latest">Latest</span>
+                            <span class="tab" data-tab="popular">Most Viewed</span>
+                        </div>
+                        <!-- ট্যাব কনটেন্ট আইডি: latest ও popular -->
+                        <div class="tab-content" id="latest">
+                            <div class="article-list">
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                            </div>
+                            <a href="/popolar.html" class="article-btn noselect">popular</a>
+                        </div>
+    
+                        <div class="tab-content" id="popular">
+                            <div class="article-list">
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>US sees 'deescalation' after Iran's nuclear deal</span>
+                                </div>
+                                <div class="article-link">
+                                    <i class="fas fa-square"></i> <span>BRUR observes July Martyrs' Day with due dignity</span>
+                                </div>
+                                <!-- Add more Most Viewed article -->
+                            </div>
+                            <a href="/latest.html" class="article-btn noselect">All-article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container text-center">
+            <p>বাংলাদেশের সর্বশেষ সংবাদ ও আপডেট পেতে আমাদের সাথে থাকুন।</p>
+            <div class="footer-links">
+                <a href="#">গোপনীয়তা নীতি</a> |
+                <a href="#">শর্তাবলী</a> |
+                <a href="#">যোগাযোগ</a>
+            </div>
+        </div>
+        <div class="container text-center">
+            <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                data-bs-target="#accountModal">অ্যাকাউন্ট</a>
+            <a href="#" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#searchModal">সার্চ</a>
+        </div>
+        <div class="container text-center">
+            <p>&copy; 2025 BD Report. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Account Modal -->
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accountModalLabel">অ্যাকাউন্ট তথ্য</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="বন্ধ করুন"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>এইখানে আপনি অ্যাকাউন্ট সম্পর্কিত তথ্য রাখতে পারেন।</p>
+                    <a href="#" class="btn btn-primary btn-sm mb-2 w-100">লগইন করুন</a>
+                    <a href="#" class="btn btn-secondary btn-sm w-100">রেজিস্ট্রেশন</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="searchModalLabel">Searching in BD Report</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-2">
+                    <form action="{{ url('/search') }}" method="GET" class="d-flex align-items-center">
+                        <div class="search-input-group">
+                            <input type="text" class="search-form-control" placeholder="Searching...">
+                            <button class="search-button" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
